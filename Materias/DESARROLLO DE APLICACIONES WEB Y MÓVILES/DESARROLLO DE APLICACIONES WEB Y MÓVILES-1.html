@@ -1,0 +1,424 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+
+</title><meta name="CODE_LANGUAGE" content="C#"><meta name="vs_defaultClientScript" content="JavaScript"><meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5"><meta name="keywords" content="Académico, en línea, online, información, info, academico, academica, informacion general, general, factor, promedio, carrera, socioeconomico, graduado, egresado"><meta name="description" content="Podrá visualizar datos académicos como factor socioeconómico P, el número de materias tomadas, el número de materias aprobadas por año/término, promedio obtenido en cada una de las carreras tomadas.  En el caso de ser un estudiante egresado podrá visualizar la fecha en la cual egresó. De igual forma los estudiantes graduados en la ESPOL, podrán visualizar la fecha de graduación y la modalidad de la misma (Tesis, Tópico, Informe Técnico... entre otros)."><meta http-equiv="Pragma" content="no-cache">
+    <script language="javaScript" type="text/javascript" src="../../js/jquery-1.10.2.min.js"></script>
+    <script language="javaScript" type="text/javascript" src="../../js/jquery-ui-1.10.3.js"></script>
+    <script language="javaScript" type="text/javascript" src="../../js/ajax_v2.js"></script>
+    <script language="javaScript" type="text/javascript" src="../../js/jquery.dataTables.min.js"></script>
+    <script language="javaScript" type="text/javascript" src="../../js/ZeroClipboard.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2T67Tlkmx9ewAZ2t-JHR8rbQknquZ0gE" type="text/javascript"> </script>
+    <script language="javascript" type="text/javascript" src="../../js/color/jquery.colorbox.js"></script>
+    <script language="javascript" type="text/javascript" src="../../fancybox/jquery.fancybox.pack.js"></script>
+    
+    <script language="javascript&quot;" type="text/javascript" src="https://www.academico.espol.edu.ec/UI/css/wg_sistemas/wg_espol.js"></script>
+     <script language="javascript" type="text/javascript">
+
+        function activarDiv() {
+            document.getElementById('inline_content').style.display = "";
+            setTimeout("load()", 1000);
+        }
+ </script>
+    <link href="../css/table.css" rel="stylesheet" type="text/css"><link href="../css/bootstrap.css" rel="stylesheet" type="text/css"><link href="../css/jquery-ui.css" rel="stylesheet" type="text/css"><link href="../css/Site.css" rel="stylesheet" type="text/css"><link href="../css/estiloAcademico.css?v=1.5" rel="stylesheet" type="text/css"><link href="https://www.academico.espol.edu.ec/UI/css/wg_sistemas/wg_espol.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+    function cargarparalelo(elm) {
+        var id = $(elm).attr('id');
+        $(".mostrar").removeClass('active');
+        $('#' + id).addClass('active');
+        $(".tabla_horario").css("display","none");
+        $('#tabla_' + id).css("display", "");
+        event.preventDefault();
+      
+    }
+</script>
+
+
+
+    <style>
+    
+    </style>
+</head>
+<body style="">
+    <form name="aspnetForm" method="post" action="./MateriaPlanificada.aspx?idMateria=6822&amp;numeroParalelo=1&amp;p=574&amp;idCurso=140456" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzNTIyNjE5NDJkZLSkRnIw8aulmZ1xtDKSKDS8GF2KSyHs2k0UedN/gvoE">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=1Jr-ObcLwOpceAeLhttTzQqm6ElGc2M_-acGAWitvYKE_GmwTYIPPcorpFy8HFWKIt-8MMmhffNY2z5RYDb_nLvUtPJp7udRhCV_xuo883I1&amp;t=636354726046607314" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=wasnS3WaA5DS1dJpgA6L4nelHq44Wz2r2WisxcZvhyrx8NSdkYf_c92s9FwEBofMMHCTa4TyUJskkdwFTikq0ES2aP3-TrkzqjZ4W3pAhkBki17le6L_5w2O-q9n4CFtVByAfwW-eOd7oWthnbh3dg2&amp;t=23c9c237" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=gYV9AaFamnTd1j1Gz570cElx9-H1DISpBoRvTkR97R34uqnd6780ODauuMVvXF4YsRrGF1kxGzKLy8jfmjsqlS1e4qATSgbgr2RhRbka3dq9pNl8WdnKVmsYBS4IaqS5lwaRBUErMA30H9eF76Q0aQ2&amp;t=23c9c237" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4C078DD8">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJ6eo1iIiCmHo99cTxYJ6BPdVgTxtzlQp3bIg6bm0ufzrF5vzsv+mHOWvFW1w5sTcKox8AFbGPnMud5bIMZFq04">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 0, 'ctl00');
+//]]>
+</script>
+
+    <div id="master2">
+      <div id="header">
+        <div class="container headerespol">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    
+                     <a href="http://www.espol.edu.ec">
+                         <img class="pull-left logoespol" src="/images/espol/logo-gris.png" alt="ESPOL" title="ESPOL">
+
+                     </a>
+
+                    <div class="pull-left logotitulocontent">
+                        <span class="fontespol logotitulo">
+                           <p>Académico</p>
+                        </span>    
+                    </div>
+                    
+ 
+                 </div>
+
+                  <div class="hidden-xs col-md-4"> <div class="login-container">
+                <br>
+                <div class="text-right usuario">
+                    <span id="ctl00_lblNombreUsuario">JOSUE ALEXANDER COBOS SALVADOR</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+             </div></div>
+
+            </div>
+        </div>
+         <hr class="hr_header">
+        <div id="divNavbar">
+            <div class="container">
+                <nav class="navbar" id="myNavbar">
+               <ul class="nav user pull-right">
+              
+                       
+                    <li>
+                        <a id="widgetsistemas" class="wg_espol_icon_main"></a><div class="wg_espol_dropdown_login wg_espol_dropdown_menu wg_espol_dropdown_menu_right" style="min-width: 270px;"><div class="wg_espol_triang_sup"></div><div class="block-row clearfix"></div><div class="block-row clearfix"><a class="wg_a banner-block pull-left img-ico bg-amarillo img-cenacad banner-block-big" style="padding: 0 !important;" href="https://www.cenacad.espol.edu.ec/" title="Cick para acceder al sistema de Cenacad"></a></div><div class="block-row clearfix"><a class="wg_a banner-block pull-left img-ico bg-azul img-academico banner-block-big" style="padding: 0 !important;" href="https://www.academico.espol.edu.ec" title="Cick para acceder al sistema de Académico"></a><a class="wg_a banner-block pull-left img-ico bg-amarillo img-certificados banner-block-big" style="padding: 0 !important;" href="http://www.certificados.espol.edu.ec/" title="Cick para acceder al sistema de Certificados y Solicitudes"></a></div><div class="block-row clearfix"><a class="wg_a banner-block pull-left img-ico bg-gris img-repositorio banner-block-big" style="padding: 0 !important;" href="https://www.dspace.espol.edu.ec/" title="Cick para acceder al sistema de Repositorio"></a><a class="wg_a banner-block pull-left img-ico bg-azul img-vinculos banner-block-big" style="padding: 0 !important;" href="http://www.vinculos.espol.edu.ec/" title="Cick para acceder al sistema de Vínculos"></a></div></div>
+                    </li>                
+                <li>&nbsp;</li>
+                    <li>
+                     <a id="ctl00_lbtSalir" tabindex="100" class="rol_exit" title="Cerrar Sesión" href="javascript:__doPostBack('ctl00$lbtSalir','')"></a>&nbsp;&nbsp;
+                    </li>
+                    
+                </ul>
+                    <div class="collapse navbar-collapse" id="MenuPrincipal">
+                        <div id="ctl00_navigator" class="menu rowMain"><ul class="nav navbar-nav" id="nav"><li class="dropdown"><a href="/UI/InformacionAcademica/informaciongeneral.aspx?opt=1">MI INFORMACIÓN</a></li><li class="dropdown"><a href="/UI/RegistrosOnlineVacacional/materiaRegistroNormal.aspx?opt=2">REGISTRO EN LÍNEA</a></li><li class="dropdown"><a href="/UI/PagosPendientes/deudasG.aspx?opt=5">PAGOS</a></li><li class="dropdown"><a href="/UI/Registros/horariosplanificados.aspx?opt=6">REGISTROS</a></li><li class="dropdown"><a href="/UI/RegistrosIngles/preregistroExamenExtraordinario.aspx?opt=7">EXÁMENES</a></li><li class="dropdown"><a href="/UI/Reglamento/Reglamentos.aspx?opt=8">REGLAMENTOS</a></li></ul></div>
+                       
+                    </div>
+                </nav>
+            </div>
+        </div>
+      </div>
+
+    <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="c-menu" style="margin-left: -38px;">
+                        <div id="ctl00_smenu"><li class="dropdown"><a>REGISTROS</a><ul class="nav nav-pills nav-stacked"><li class="dropdown"><a href="/UI/Registros/horariosplanificados.aspx">Horarios Planificados</a></li><li class="dropdown"><a href="/UI/Registros/materiasdisponibles.aspx">Materias Disponibles</a></li><li class="dropdown"><a href="/UI/Registros/materiasitinerariodisponibles.aspx">Materias Itinerario Disponibles</a></li><li class="dropdown"><a href="/UI/Registros/causanodisponible.aspx">Causa Materia no Disponible</a></li><li class="dropdown"><a href="/UI/Registros/materiasregistradas.aspx">Materias Registradas</a></li></ul></li></div>
+                        
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div id="c-container">
+                        
+    <style>
+        span#ctl00_contenido_LabelParalelos{
+        color:#F5b400 !important
+    }
+    </style>
+
+    <div id="container">
+		<!--INICIO-->
+        <h1><span id="ctl00_contenido_lbltexto">Planificación 1ER TERMINO 2020</span></h1>
+        <h1>Materia Planificada</h1><br><br>
+         <span id="ctl00_contenido_lbldeporte" style="color:Red;font-size:Small;font-weight:bold;"></span> <br><br><br>
+        <table cellspacing="0" cellpadding="0" width="90%" bgcolor="#f1f1f1" align="center" style=" border:solid ;border-color:#D9d9d9; border-width:1px; ">
+        <tbody><tr>
+            <td class="hdrtop" align="center">
+                <table style="color:#001c43;width:100%;background-color:#ebebeb">
+			        <tbody><tr>
+				        <td width="75%" class="yh"><b>Materia:&nbsp;&nbsp;</b><span id="ctl00_contenido_LabelNombreMateria">DESARROLLO DE APLICACIONES WEB Y MÓVILES</span></td>
+				        <td width="25%" class="yh"><b>Paralelo:&nbsp;&nbsp;</b><span id="ctl00_contenido_LabelParalelo">1</span></td>
+			        </tr>
+                    <tr class="hdrtop1 yh">
+				        <td colspan="2"><b>Profesor:&nbsp;&nbsp;</b><span id="ctl00_contenido_LabelProfesor">AVENDAÑO SUDARIO ALLAN ROBERTO</span></td>
+                    </tr>
+                    
+                     
+                
+                </tbody></table>
+            </td>
+        </tr>
+		<tr>
+			<td>
+                <table class="display" style="width:100%;border-collapse:collapse;background-color:#FFFFFF;">
+				    <tbody><tr style="height:25px">
+					    <td width="30%"><b>Cupo Máximo:</b></td>
+					    <td width="20%"><span id="ctl00_contenido_LabelCupo">30</span></td>
+					    <td width="30%"><b>Cupo Disponible: </b></td>
+					    <td width="20%"><span id="ctl00_contenido_LabelDisponible">30</span></td>
+				    </tr>
+				      <tr style="height:25px;background-color:#ebebeb">
+					    <td><b>Examen Parcial:</b></td>
+					    <td colspan="3"><span id="ctl00_contenido_LabelParcial">09/07/2020 - 14:00 a 16:00</span></td>
+				    </tr>
+				    <tr style="height:25px">
+					    <td><b>Examen Final:</b></td>
+					    <td colspan="3"><span id="ctl00_contenido_LabelFinal">03/09/2020 - 14:00 a 16:00</span></td>
+				    </tr>
+				    <tr style="height:25px ; background-color:#ebebeb">
+					    <td><b>Mejoramiento:</b></td>
+					    <td colspan="3"><span id="ctl00_contenido_LabelMejora">17/09/2020 - 14:00 a 16:00</span></td>
+				    </tr>
+                    <tr style="height:25px">
+					        <td><b>Paralelos Asociados:</b></td>
+					     <td colspan="3">
+                                    <a href="#" onclick="cargarparalelo(this)" class="mostrar" id="101">101</a>
+                                     </td>
+				    </tr> 
+			    </tbody></table>
+			</td>
+		</tr>
+        </tbody></table>
+		<table cellspacing="0" cellpadding="0" width="90%" align="center" border="0">
+			<tbody><tr>
+				<td align="left"><span id="ctl00_contenido_LabelDirigido" class="textoNegro" style="color:Red;"><br></span></td>
+			</tr>
+		</tbody></table>
+        <br>
+		<table id="ctl00_contenido_TableHorarios" class="display" cellspacing="0" cellpadding="1" align="Center" border="0" style="border-color:#D9D9D9;border-width:1px;border-style:solid;width:90%;border-collapse:collapse;">
+	<thead>
+		<tr id="ctl00_contenido_TableRow1">
+			<th id="ctl00_contenido_TableCell1" style="border-color:#001C43;border-width:1px;border-style:Solid;">Día</th><th id="ctl00_contenido_TableCell2" style="border-color:#001C43;border-width:1px;border-style:Solid;">Hora Inico</th><th id="ctl00_contenido_TableCell3" style="border-color:#001C43;border-width:1px;border-style:Solid;">Hora Fin</th><th id="ctl00_contenido_TableCell4" style="border-color:#001C43;border-width:1px;border-style:Solid;">Aula</th><th id="ctl00_contenido_TableCell5" style="border-color:#001C43;border-width:1px;border-style:Solid;"></th>
+		</tr>
+	</thead><tbody>
+		<tr style="height:20px;">
+			<td>Lunes</td><td>13:30:00</td><td>15:30:00</td><td>L204</td><td>11A CAMPUS GUSTAVO GALINDO</td>
+		</tr><tr style="height:20px;">
+			<td>Miércoles</td><td>13:30:00</td><td>14:30:00</td><td>L204</td><td>11A CAMPUS GUSTAVO GALINDO</td>
+		</tr>
+	</tbody>
+</table>
+
+        <br>
+        <br>
+        <br>
+      
+                               
+                                    <div style="display:none" class=" display tabla_horario" id="tabla_101" align="center">  
+                                        <h1>Paralelo Práctico</h1>
+                                    <table style="color:#001c43;width:100%;background-color:#ebebeb;border-style:solid; border-width:1px;border-color:#D9d9d9" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Profesor:</b></td>
+                                                <td colspan="3">AVENDAÑO SUDARIO ALLAN ROBERTO</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Paralelo:</b></td>
+                                                <td colspan="3">101</td>
+                                            </tr>
+                                            
+
+                                            <tr>
+                                                <td><b>Capacidad:</b></td>
+                                                <td>30</td>
+                                                <td><b>Cupo disponible:</b></td>
+                                                <td>30</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <table class="display" style="width:100%;border-collapse:collapse;background-color:#FFFFFF;border-style:solid; border-width:1px;border-color:#D9d9d9">
+                                        <thead>
+                                            <tr>
+                                                <th>Día</th>
+                                                <th>Hora Inicio.</th>
+                                                <th>Hora Fin</th>
+                                                <th>Aula</th>
+                                                <th>Bloque</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                                <tr>
+                                                    <td>
+                                                        Miércoles
+                                                    </td>
+                                                    <td>
+                                                        14:30:00
+                                                    </td>
+                                                    <td>
+                                                        15:30:00
+                                                    </td>
+                                                    <td>
+                                                        L204
+                                                    </td>
+                                                    <td>
+                                                        11A CAMPUS GUSTAVO GALINDO
+                                                    </td>
+
+                                                </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                           
+       
+       
+       <br>
+           
+
+
+
+						<br>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tbody><tr>
+								<td align="center" class="tdSub"><b>Paralelos</b></td>
+							</tr>
+							<tr>
+								<td align="center">                                   
+                                    <span id="ctl00_contenido_LabelParalelos" class="textoNegro">[&nbsp;1&nbsp;<a class="link" href="MateriaPlanificada.aspx?idCurso=140458&amp;idMateria=6822&amp;p=574">2</a>&nbsp;]</span>
+                                 </td>
+							</tr>
+						</tbody></table>
+						<br>
+						<br>
+					  	<!--fin-->
+				</div>
+
+
+                    </div>
+                </div>
+           
+            <div id="c-mapa">
+                
+                
+            </div>
+        </div>
+            </div>
+        <div class="footer" style="margin-top:100px;">
+            <div class="container footer-portal">
+                <div class="row">
+                    <div class="col-md-12 text-center footer-left">
+                        <p>
+                            <br>
+                            Escuela Superior Politécnica del Litoral - Campus Gustavo Galindo - Guayaquil - Ecuador<br>
+                            © El contenido de esta obra es de propiedad intelectual de la ESPOL. Todos los derechos reservados. Prohibida su reproducción total o parcial,<br>
+                            comunicación pública o distribución sin autorización previa del titular de los derechos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </form>
+    <!-- This contains the hidden content for inline calls -->
+    <div style="display: none;">
+        <div id="inline_content" class="callbacks" style="padding: 10px; background: #fff;
+            overflow: hidden; height: 700px; display: none;">
+            
+            <div id="div_mostrar_casilleros" style="margin: 5px; position: absolute; top: 0px;
+                right: 0px;">
+                <br>
+                <p style="font-size: 10px; font-family: verdana; font-weight: bold;">
+                    Dirección a buscar:
+                    <input type="text" name="address" id="address" style="width: 400px; font-size: 10px;
+                        font-family: verdana; font-weight: bold;" value="">
+                    <input type="hidden" name="zoom" value="8">
+                    <input type="button" value="Buscar" onclick="codeAddress1()">
+                    <br>
+                    &nbsp;<label style="color: gray; font-size: xx-small">Ej: Guayaquil, Ecuador</label>
+                </p>
+                <div id="map" style="width: 700px; height: 500px;">
+                </div>
+                <br>
+                <div align="center">
+                    <button id="aceptar" type="button" onclick="cambiar2()">
+                        Aceptar</button>
+                    <button id="ctl00_cancelar" type="button" onclick="cancelar()">
+                        Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script language="Javascript" type="text/javascript">
+        var warning = 1200;
+        var timeout = 1740;
+        var current = 0;
+        var popupWindow = 0;   // javascript Window Handle 
+
+        function popUpTimeOut(sURL) {
+            var rc = 0;
+            var altURL = "https://www.academico.espol.edu.ec/" + sURL;
+            popupWindow = window.open(unescape(altURL), 'timeout', 'toolbar=no,scrollbars=no,resizable=no,width=400,height=300');
+        }
+        function getSecs() {
+            current = current + 1;
+            console.log(current);
+            if (current == warning) {
+                popUpTimeOut('warning.htm');   // 20 minute inactivity timer
+            }
+            if (current == (timeout - 60)) {
+                popUpTimeOut('warning1.htm');   // 29 minute inactivity timer
+            }
+            else if ((current == timeout) || (current == (timeout - 1))) {
+                if (popupWindow != null) {
+                    if (popupWindow != 0)
+                    { popupWindow.close(); }
+                }
+                window.location = "https://www.academico.espol.edu.ec/timeout_.aspx";
+            }
+            window.setTimeout('getSecs()', 1000);
+        }
+        getSecs();
+        $(document).ready(function () {
+            var menu = [];
+            menu.push('cenacad');menu.push('academico');menu.push('solicitudes');menu.push('certificados');menu.push('repositorio');menu.push('vinculos');menu.push('');
+                $("#widgetsistemas").sistemasEspol2(menu);
+          
+ });
+       
+
+
+    </script>
+
+
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'PBMAJBPBIEKOGJBJGACACAEHGPDCEDIOJOCGDNOHGOGCCKENLIADFPHPAMPPKIGAPAHBBOFFAHFNPJGKIJJAJGFCAKDNNMMIAOAMBMJCCIMECALEHBDOHHKFBHDLAKOF',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0479590389aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>
